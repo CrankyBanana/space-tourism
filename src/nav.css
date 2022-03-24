@@ -1,0 +1,45 @@
+.nav {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    color: #FFFFFF;
+    margin-top: 4%;
+  }
+  
+  .star {
+    font-size: 50px;
+    width: 10%;
+  }
+  
+  .rectangle {
+    width: 40%;
+    border-top: 1px solid #FFF;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: auto;
+  }
+  
+  .navItems {
+    float: right;
+    width: 50%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-blend-mode: lighten;
+    background-color: hsla(200,100%,100%,.05);
+    backdrop-filter: blur(20px);
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+  }
+  
+  .navItems > * {
+    letter-spacing: 2.7px;
+    font-size: 16px;
+    padding: 20px;
+    margin: auto;
+    text-decoration: none;
+    color: #FFF;
+  }
+  
+  .navItems > *:hover, .navItems * >:active {
+    border-bottom: 2px solid #FFF;
+  }

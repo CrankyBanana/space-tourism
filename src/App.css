@@ -1,38 +1,105 @@
 .App {
-  text-align: center;
+  background-image: url("./assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  overflow: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homeContent {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.homeText {
+  margin-left: 10%;
+  padding-top: 10%;
+  color: #FFF;
+  height: auto;
+  width: 25%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homeBtn {
+  margin: auto;
+  padding-top: 15%;
+  padding-left: 10%;
+}
+
+#exploreBtn {
+  border-radius: 50%;
+  padding: 20px;
+  width: 274px;
+  height: 274px;
+  border: none;
+}
+
+#exploreBtn:hover {
+
+}
+
+.h1 {
+  font-family: 'Bellefair', serif;
+  font-size: 150px;
+}
+
+.h5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 4.75px;
+  font-size: 28px;
+}
+
+.h4 {
+  font-family: 'Bellefair', serif;
+  font-size: 32px;
+}
+
+.body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+}
+
+.nav {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  color: #FFFFFF;
+  margin-top: 4%;
+}
+
+.star {
+  font-size: 50px;
+}
+
+.rectangle {
+  width: 40%;
+  border-top: 1px solid #FFF;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: auto;
+}
+
+.navItems {
+  float: right;
+  width: 50%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-blend-mode: lighten;
+  background-color: hsla(200,100%,100%,.05);
+  backdrop-filter: blur(20px);
+  font-family: 'Barlow Condensed', sans-serif;
+  display: flex;
+}
+
+.navItems > * {
+  letter-spacing: 2.7px;
+  font-size: 16px;
+  padding: 20px;
+  margin: auto;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.navItems > *:hover {
+  border-bottom: 2px solid #FFF;
 }
