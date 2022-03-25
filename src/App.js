@@ -1,15 +1,17 @@
 import './App.css';
 import Nav from './nav'
 
+// Landing page 
 function App() {
   return (
+    // Content on Home Page
     <div className="App">
       <Nav current="home"/>
       <div className="homeContent">
         <div className="homeText">
           <div className="h5">So, you want to travel to</div>
           <div className="h1">SPACE</div>
-          <div className="body">
+          <div className="bodyText">
             Let’s face it; if you want to go to space, you might as well genuinely go to 
             outer space and not hover kind of on the edge of it. Well sit back, and relax 
             because we’ll give you a truly out of this world experience!

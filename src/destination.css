@@ -7,3 +7,94 @@
     position: fixed;
     overflow: auto;
 }
+
+.body {
+    margin-top: 4%;
+    margin-left: 15%;
+    color: white;
+    display: grid;
+}
+
+.pickText {
+    display: flex;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 4.72px;
+    font-size: 28px;
+    margin-bottom: 20%;
+}
+
+.pickNumber {
+    margin-right: 1%;
+    font-weight: bold;
+    color: #616476;
+}
+
+.planet {
+    margin-top: 5%;
+    grid-column: 2;
+    margin-left: 30%;
+    width: 40%;
+}
+
+.planetInfo {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: #D0D6F9;
+    margin-top: 5%;
+}
+
+img {
+    width: 27rem;
+    height: 27rem;
+}
+
+.planetNavItems {
+    list-style: none;
+    display: flex;
+}
+
+.planetNavItems li {
+    padding: 0.5em;
+}
+
+.planetNavItems li:hover {
+    box-shadow: 0px 2px 0px #979797;
+    cursor: pointer;
+}
+
+.planetNavItems li:active {
+    box-shadow: 0px 2px 0px #FFF;
+}
+
+.h2 {
+    font-family: 'Bellefair', serif;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.body {
+    font-family: 'Bellefair', serif;
+    font-size: 18px;
+}
+
+.planetStats {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.sh2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    color: #D0D6F9;
+}
+
+.stat {
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+}
+
+hr {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
