@@ -20,29 +20,33 @@ function Destination() {
 
     const handlePlanet = (planet) => {
         switch(planet) {
-            case "Moon":
+            default:
                 setCurrentPlanet("Moon")
                 setPlanetInfo(moonDesc)
                 setPlanetSrc(Moon)
                 setPlanetStats(moonStats)
+                setActiveIndex(0)
                 break;
             case "Mars":
                 setCurrentPlanet("Mars")
                 setPlanetInfo(marsDesc)
                 setPlanetSrc(Mars)
                 setPlanetStats(marsStats)
+                setActiveIndex(1)
                 break;
             case "Europa":
                 setCurrentPlanet("Europa")
                 setPlanetInfo(europaDesc)
                 setPlanetSrc(Europa)
                 setPlanetStats(europaStats)
+                setActiveIndex(2)
                 break;
             case "Titan":
                 setCurrentPlanet("Titan")
                 setPlanetInfo(titanDesc)
                 setPlanetSrc(Titan)
                 setPlanetStats(titanStats)
+                setActiveIndex(3)
                 break;
         }
     }
@@ -51,6 +55,7 @@ function Destination() {
     const [planetSrc, setPlanetSrc] = useState(Moon)
     const [planetInfo, setPlanetInfo] = useState(moonDesc)
     const [planetStats, setPlanetStats] = useState(["384,400 KM", "3 DAYS"])
+    const [activeIndex, setActiveIndex] = useState(0)
 
     return (
         <div className="main">
@@ -58,15 +63,15 @@ function Destination() {
             <div className="body">
                 <div className="pick">
                     <div className="pickText"><div className="pickNumber">01</div>PICK YOUR DESTINATION</div>
-                    <img src={planetSrc}></img>
+                    <img src={planetSrc} alt=""></img>
                 </div>
                 <div className="planet">
                     <div className="planetNav">
                         <ul className="planetNavItems">
-                            <li onClick={() => handlePlanet("Moon")}>Moon</li>
-                            <li onClick={() => handlePlanet("Mars")}>Mars</li>
-                            <li onClick={() => handlePlanet("Europa")}>Europa</li>
-                            <li onClick={() => handlePlanet("Titan")}>Titan</li>
+                            <li className={activeIndex == 0 && "planetActive"} onClick={() => handlePlanet("Moon")}>Moon</li>
+                            <li className={activeIndex == 1 && "planetActive"}onClick={() => handlePlanet("Mars")}>Mars</li>
+                            <li className={activeIndex == 2 && "planetActive"}onClick={() => handlePlanet("Europa")}>Europa</li>
+                            <li className={activeIndex == 3 && "planetActive"}onClick={() => handlePlanet("Titan")}>Titan</li>
                         </ul>
                         <div className="h2">{currentPlanet}</div>
                         <div className="planetInfo">{planetInfo}</div>
@@ -83,5 +88,6 @@ function Destination() {
         </div>
     )
 }
+
 
 export default Destination;

@@ -33,7 +33,7 @@
     margin-top: 5%;
     grid-column: 2;
     margin-left: 30%;
-    width: 40%;
+    width: 37%;
 }
 
 .planetInfo {
@@ -41,6 +41,7 @@
     font-size: 18px;
     color: #D0D6F9;
     margin-top: 5%;
+    line-height: 32px;
 }
 
 img {
@@ -62,9 +63,6 @@ img {
     cursor: pointer;
 }
 
-.planetNavItems li:active {
-    box-shadow: 0px 2px 0px #FFF;
-}
 
 .h2 {
     font-family: 'Bellefair', serif;
@@ -96,5 +94,10 @@ img {
 
 hr {
     margin-top: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
+    opacity: 0.2;
+}
+
+.planetActive {
+    box-shadow: 0px 2px 0px #FFF;
 }
