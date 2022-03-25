@@ -68,10 +68,10 @@ function Destination() {
                 <div className="planet">
                     <div className="planetNav">
                         <ul className="planetNavItems">
-                            <li className={activeIndex == 0 && "planetActive"} onClick={() => handlePlanet("Moon")}>Moon</li>
-                            <li className={activeIndex == 1 && "planetActive"}onClick={() => handlePlanet("Mars")}>Mars</li>
-                            <li className={activeIndex == 2 && "planetActive"}onClick={() => handlePlanet("Europa")}>Europa</li>
-                            <li className={activeIndex == 3 && "planetActive"}onClick={() => handlePlanet("Titan")}>Titan</li>
+                            <li className={activeIndex === 0 && "planetActive"} onClick={() => handlePlanet("Moon")}>Moon</li>
+                            <li className={activeIndex === 1 && "planetActive"} onClick={() => handlePlanet("Mars")}>Mars</li>
+                            <li className={activeIndex === 2 && "planetActive"} onClick={() => handlePlanet("Europa")}>Europa</li>
+                            <li className={activeIndex === 3 && "planetActive"} onClick={() => handlePlanet("Titan")}>Titan</li>
                         </ul>
                         <div className="h2">{currentPlanet}</div>
                         <div className="planetInfo">{planetInfo}</div>
